@@ -73,7 +73,7 @@ namespace Fallen_LE_Mods.Features
 
         }
 
-        [HarmonyPatch(typeof(TooltipItemManager), "OpenTooltip", new Type[] { typeof(ItemDataUnpacked), typeof(TooltipItemManager.SlotType), typeof(Vector2), typeof(Vector3), typeof(GameObject) })]
+        [HarmonyPatch(typeof(TooltipItemManager), "OpenTooltip", new Type[] { typeof(ItemDataUnpacked), typeof(TooltipItemManager.SlotType), typeof(Vector2), typeof(Vector3), typeof(GameObject), typeof(Vector2) })]
         public class TooltipItemManagerPatch
         {
             public static void Prefix(Il2Cpp.TooltipItemManager __instance, Il2Cpp.ItemDataUnpacked data, Il2Cpp.TooltipItemManager.SlotType type, UnityEngine.Vector2 tooltipOffset, UnityEngine.Vector3 position, UnityEngine.GameObject opener)
